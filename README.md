@@ -14,4 +14,5 @@ The calculation is weight divided by height.</p>
    
    
 So, if you're interested, check it out! 🙂
+
 https://matheusfernandes-git.github.io/Calculator-IMC/
