@@ -14,16 +14,14 @@ function calculate(){
         res =`Seu IMC é ${imc}`;
     }else if(imc < 39.9){
         res =`Seu IMC é ${imc}`;
-    }else if(imc < 39.9){
-        res =`Seu IMC é ${imc}`;
     }else{
         res =`Seu IMC é ${imc}`;
     }
 
-}
-
-function Clear(){
-    document.getElementById('height').value = ''
-    document.getElementById('weight').value = ''
-    document.getElementById('res').value = ''
+    const clear = document.getElementById('limpar');
+    clear.addEventListener('click', () =>{
+        document.getElementById('height').value = ''
+        document.getElementById('weight').value = ''
+        document.getElementById('res').value = ''
+    })
 }
