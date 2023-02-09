@@ -1,9 +1,11 @@
-function calcule(){
-    let height = document.getElementById('height').value / 100;
+function calculate(){
+    let height = document.getElementById('height').value;
     let weight = document.getElementById('weight').value;
 
-    let imc = (weight / (height * height)).toFixed(1);
-    let res = ''
+    let imc = (weight / (height * height));
+    let res = document.getElementById('res');
+    res.innerHTML = `Seu IMC é: ${imc.toFixed(2)}`;
+
     if(height == "" || weight == ""){
         alert('ERRO, Digite sua altura e idade corretamente!')
     }else if(imc < 18.56){
@@ -17,10 +19,10 @@ function calcule(){
     }else{
         res =`Seu IMC é ${imc}`;
     }
-    document.getElementById('res').innerText= res
+
 }
 
-function limpar(){
+function Clear(){
     document.getElementById('height').value = ''
     document.getElementById('weight').value = ''
     document.getElementById('res').value = ''
