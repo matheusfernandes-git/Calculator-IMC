@@ -27,7 +27,7 @@ OBESIDADE GRAVE`;
 }
 
 const clear = document.getElementById('limpar')
-clear.addEventListener('click', () =>{
-document.getElementById('height').value = ''
-document.getElementById('weight').value = ''
+    clear.addEventListener('click', () =>{
+    document.getElementById('height').value = ''
+    document.getElementById('weight').value = ''
 })
